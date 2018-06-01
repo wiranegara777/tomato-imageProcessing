@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tomato Classifier</title>
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+
+  <!-- style -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Tomato Classifier</a>
+      </div>
+    </div>
+  </div>
+  <div id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Identify Tomato</h1>
+          <h2 class="subtitle">To Predict Weight and Level of Maturnity of Tomatoes</h2>
+
+
+            <div class="form-group">
+              <input type="file" accept="image/*;device=camera" style="background-color:white; color:black;" class="form-group" id="fileField" name="fileField" />
+            </div>
+            <br></br>
+            <form method="POST" action="/tomat" class="form-inline signup" role="form">
+            <button type="submit" class="btn btn-theme">Submit</button>
+            </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+<script src="app.js"></script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tomatot Prediction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+  <nav class="bg-primary navbar navbar-light">
+    <span class="navbar-brand mb-0 h1 text-white">Tomato Classifier and Weight Prediction</span>
+  </nav>
+<div class="container">
+  <center>
+    <!-- <form class="form-group">
+        <span>Select Image</span></br>
+        <input type="file" accept="image/*;device=camera" class="mt-2" id="fileField" name="fileField"/>
+    </form> -->
+    <img style="width:400px; height:300px;" id="imageID" class="img-responsive" src="/currentimage" />
+    <p>
+      <!-- {% block content %} -->
+      <span id="prediction">prediction :{{prediction}}</span><br>
+      <span id="confidence">weight :{{weight}}</span>
+      <!-- {% endblock %} -->
+    </p>
+    <!-- <form method="POST" action="index.html"> -->
+      <!-- <button type="submit" class="btn btn-primary">Classify</button></a> -->
+    <!-- </form> -->
+  </center>
+</div>
+<!-- <script src="app.js"></script> -->
+</body>
+</html>
